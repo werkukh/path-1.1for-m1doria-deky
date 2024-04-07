@@ -1,0 +1,70 @@
+KeepInventory:
+  # Sets whether or not Keep Inventory feature is enabled.
+  Enabled: true
+  # List of permission groups that will save their items on death.
+  Items_Ranks:
+  - vip
+  - admin
+  # List of permission groups that will save their XP on death.
+  Exp_Ranks:
+  - vip
+  - admin
+JoinCommands:
+  # Sets whether or not Join Commands feature is enabled.
+  Enabled: false
+  # List of commands to execute when player joined server for the first time.
+  # Use '%player_name%' for a player name.
+  # You can use PlaceholderAPI here.
+  FirstJoin:
+  - 'broadcast Приветствуем нового игрока: %player_name%!'
+  # List of commands to execute when player joins the server.
+  # Use '%player_name%' for a player name.
+  # You can use PlaceholderAPI here.
+  Default: []
+Anvil_Colors:
+  # Sets whether or not Anvil Colors feature is enabled.
+  # Players with 'sunlight.extras.anvils.color' permission will be able to use colors on anvils.
+  Enabled: true
+Sign_Colors:
+  # Sets whether or not Sign Colors feature is enabled.
+  # Players with 'sunlight.extras.signs.color' permission will be able to use colors on signs.
+  Enabled: true
+Physic_Explosions:
+  # Sets whether or not Physic Explosions feature is enabled.
+  # This will make blocks flying away on explosions.
+  Enabled: true
+Chairs:
+  # Sets whether or not Chairs feature is enabled.
+  Enabled: true
+  # Sets whether or not Slab blocks can be used as chairs.
+  Allow_Stairs: true
+  # Sets whether or not Carpet blocks can be used as chairs.
+  Allow_Carpets: true
+ChestSort:
+  # Sets whether or not Chest Sort feature is enabled.
+  Enabled: true
+  # List of sorting order & rules.
+  # Available values: IS_BLOCK, IS_ITEM, MATERIAL, AMOUNT, NAME
+  Rules:
+  - IS_BLOCK
+  - IS_ITEM
+  - MATERIAL
+  - AMOUNT
+  - NAME
+AntiFarm:
+  # Sets whether or not Enderman farms using minecart with endermite will be disabled.
+  Endermite_Minecart: true
+  # Sets whether or not Auto Fishing farms using note blocks (and not only them) will be disabled.
+  AutoFishing: true
+NerfPhantoms:
+  # Sets whether or not NerfPhantoms feature is enabled.
+  Enabled: false
+  # Sets a list of SpawnReasons to disable phantoms spawn from.
+  # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/entity/CreatureSpawnEvent.SpawnReason.html
+  Disable_Spawn:
+  - DEFAULT
+  - NATURAL
+  # Sets phantom's damage modifier to players. PhantomDamage * DamageModifier = Final Damage.
+  Damage_Modifier: 1.0
+  # Replaces phantom's health with specified value.
+  Health: 20.0

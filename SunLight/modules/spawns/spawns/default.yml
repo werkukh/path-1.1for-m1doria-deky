@@ -1,0 +1,13 @@
+Name: '&eDefault'
+Location: -26.69999998807907,117.0,82.07419297214676,20.326237,115.723755,world
+Permission_Required: false
+Is_Default: true
+Priority: 0
+Teleport_On_Login:
+  Enabled: true
+  For_New_Players: true
+  Groups:
+  - default
+Teleport_On_Death:
+  Enabled: false
+  Groups: []
